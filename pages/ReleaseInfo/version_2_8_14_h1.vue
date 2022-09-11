@@ -1,8 +1,8 @@
 <template>
   <div>
     <release-header
-      header="Version 14 - War Manager Fenix (v2.8.14)"
-      subtitle="Bugs fixed, user messaging functionality, ground work laid for csv importing tool (forms system), and introduced War Manager Open Beta."
+      header="Version 14 - War Manager Fenix (v2.8.14h1)"
+      subtitle="Bugs fixed"
     ></release-header>
     <v-tooltip v-for="item in releaseTypes" :key="item" bottom>
       <template v-slot:activator="{ on, attrs }">
@@ -75,7 +75,7 @@
           <v-divider />
           <v-card-actions>
             <v-spacer />
-            <v-btn color="blue"><v-icon>mdi-bug</v-icon>Report Bug</v-btn>
+            <bug-report-component />
           </v-card-actions>
         </v-card>
       </v-col>
@@ -84,22 +84,25 @@
 </template>
 
 <script>
+import BugReportComponent from '~/components/BugReportComponent.vue'
 export default {
-  name: 'WarManagerReleaseTemplate',
+  components: { BugReportComponent },
+  name: 'ReleaseVersion2814',
   data() {
     return {
       releaseTypes: [
         {
           icon: 'mdi-calendar-check',
           color: 'purple',
-          title: '1.5.2022',
+          title: '1.7.2022',
           description: 'Release Date',
         },
         {
-          title: 'minor update',
-          icon: 'mdi-update',
-          color: 'green',
-          description: 'Minor updates add small features and fix deep bugs',
+          icon: 'mdi-fire',
+          title: 'hotfix',
+          color: 'orange',
+          description:
+            'Breaking bugs or tweaks found upon release are fixed usually within a month after release',
         },
         {
           title: 'Bug Fix',

@@ -52,8 +52,6 @@ export default {
   padding: 0.25em;
   padding-left: 1em;
   padding-right: 1em;
-  margin-bottom: 1em;
-  border-radius: 0.25em;
   border-left: 4px solid #444;
 }
 </style>

@@ -87,17 +87,25 @@ export default {
       ],
       releaseInfos: [
         {
-          title: 'War Manager Release v2.9.2',
-          subtitle: '2.19.22',
-          content: 'this is more information about the release',
-          to: '/ReleaseInfo/warmanagerreleasetemplate',
-          tags: [{ title: 'hotfix', icon: 'mdi-fire', color: 'orange' }],
+          title: 'Version 14 Release (v2.8.14)',
+          subtitle: '1.5.2022',
+          content:
+            'Bugs fixed, user messaging functionality, ground work laid for csv importing tool (forms system), and introduced War Manager Open Beta.',
+          to: '/ReleaseInfo/Release_v2_8_14',
+          tags: [
+            {
+              title: 'minor update',
+              icon: 'mdi-update',
+              color: 'green',
+              description: 'Minor updates add small features and fix deep bugs',
+            },
+          ],
         },
         {
-          title: 'War Manager Release v2.9.2',
-          subtitle: '2.19.22',
-          content: 'this is more information about the release',
-          to: '/ReleaseInfo/warmanagerreleasetemplate',
+          title: 'Version 14 Release (v2.9.14h1)',
+          subtitle: '1.7.2022',
+          content: 'Hotfix',
+          to: '/ReleaseInfo/version_2_8_14_h1',
           tags: [{ title: 'hotfix', icon: 'mdi-fire', color: 'orange' }],
         },
         {
